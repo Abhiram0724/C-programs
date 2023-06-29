@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{ 
+  int x,y,t;
+  printf("Enter x:\n");
+  scanf("%d",&x);
+  printf("Enter y:\n");
+  scanf("%d",&y);
+  t=x;
+  x=y;
+  y=t;
+  printf("x=%d\n",x);
+  printf("y=%d\n",y);
+  return 0;
+
+}
