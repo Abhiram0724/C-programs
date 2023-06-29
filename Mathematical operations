@@ -1,0 +1,30 @@
+#include<stdio.h>
+#include<math.h>
+
+
+int main()
+{ 
+   int x,y,a,b,c,r;
+   double exp;
+   float d;
+  
+  printf("Enter two numbers\n");
+  scanf("%d%d",&x,&y);
+  a=x+y;
+  b=x-y;
+  c=x*y;
+  d=x/y;
+  r=x % y;
+  exp=pow(x,y);
+  printf("sum is %d\n",a);
+  printf("Differnce is %d\n",b);
+  printf("multiplication  is %d\n",c);
+  printf("division is is %.2f\n",d);
+  printf("reminder is %d\n",r);
+  printf("exponent is %lf\n",exp);
+  
+
+  
+  
+  return 0;
+   }
