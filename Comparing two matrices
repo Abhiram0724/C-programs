@@ -1,0 +1,56 @@
+#include<stdio.h>
+int main()
+{
+  int arr1[10][10],arr2[10][10],i,j,m,n,flag=1;
+  printf("Enter no. of rows and coloumns: \n");
+  scanf("%d%d",&m,&n);
+  printf("Enter the elements of first matrix:\n");
+  for(i=0;i<m;++i)
+  {
+    for(j=0;j<n;++j)
+      scanf("%d",&arr1[i][j]);
+  }
+  printf("The matrix A is\n");
+  for(i=0;i<m;++i)
+  { 
+     for(j=0;j<n;++j)
+      printf("%d\t",arr1[i][j]);
+    printf("\n\n");  
+  }
+  
+  printf("Enter the elements of second matrix:\n");
+  for(i=0;i<m;++i)
+  {
+    for(j=0;j<n;++j)
+      scanf("%d",&arr2[i][j]);
+  }
+  printf("The matrix B is \n");
+  for(i=0;i<m;++i)
+  {
+    for(j=0;j<n;++j)
+      printf("%d",arr2[i][j]);
+      printf("\n\n");
+  }
+  for(i=0;i<m;++i)
+  { 
+    for(j=0;j<n;++j)
+     {
+       if(arr1[i][j]!=arr2[i][j])
+       {
+         flag=0;
+         break;
+       }
+     }
+
+
+  }
+  if(flag==1)
+    printf("Matrix A is equal to Matrix B\n");
+  else 
+    printf("Matrix B is not equal to Matrix B\n");
+
+  return 0;
+
+  }
+ 
+
