@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main()
+{
+  int arr[10],i,n,x,idx=0;
+  printf("Enter the number of elments:\n");
+  scanf("%d",&n);
+  printf("Enter the elements:\n");
+  for(i=0;i<n;++i){
+    scanf("%d",&arr[i]);
+  }
+  printf("Enter the number to check the divisible elements:\n");
+  scanf("%d",&x);
+  for(i=0;i<n;++i)
+   {
+     if(arr[i]%x==0)
+      ++idx;
+   }
+  printf("The total number of elements divisible by %d is %d\n",x,idx);
+  return 0;
+}  
